@@ -1,18 +1,23 @@
+
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "backend for the devops exam",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll --verbose --runInBand",
+    "start": "nodemon server.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Ishimwe Teta Lena",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-validator": "^6.14.2",
+    "jest": "^29.3.1",
+    "nodemon": "^2.0.20",
     "supertest": "^6.3.3"
   }
 }
+
